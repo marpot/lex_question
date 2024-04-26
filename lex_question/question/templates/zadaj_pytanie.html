@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadaj pytanie</title>
+</head>
+<body>
+    <h1>Zadaj pytanie</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ formularz.as_p }}
+        <button type="submit">Zadaj pytanie</button>
+    </form>
+</body>
+</html>
