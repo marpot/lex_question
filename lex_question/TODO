@@ -1,2 +1,14 @@
 TODO:
 To ma być portal który będzie służył do zadawania pytań prawnych. Ma być możliwość rejestracji,odpowiedź z poziomu admina 
+
+CO JEST ZROBIONE:
+- jest możliwość zadawania pytań. Pytanie pojawia się w panelu administracyjnym.
+- pytanie składa się z: tytułu pytania, treści pytania
+
+CO JEST DO ZROBIENIA:
+-możliwość logowania użytkowników do panelu użytkownika - autoryzacja,
+-możliwość odpowiedzi na pytanie z poziomu panelu administratora,
+-dopracowanie frontendu panelu użytkownika,
+-możliwość wyboru działu dla użytkownika, do którego chce skierować pytanie
+
+
