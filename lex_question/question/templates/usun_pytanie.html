@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuń pytanie</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-300">
+    <div class="container mx-auto mt-8">
+        <div class="max-w-md mx-auto bg-white rounded-lg overflow-hidden shadow-md">
+            <div class="py-4 px-6">
+                <h2 class="text-xl font-semibold mb-4">Czy na pewno chcesz usunąć to pytanie?</h2>
+                <p class="mb-2"><span class="font-semibold">Tytuł pytania:</span> {{ pytanie.tytul }}</p>
+                <p class="mb-4"><span class="font-semibold">Treść pytania:</span> {{ pytanie.tresc }}</p>
+                <form action="{% url 'usun_pytanie' pytanie.id %}" method="post">
+                    {% csrf_token %}
+                    <button type="submit" class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Usuń</button>
+                </form>
+                <a href="{% url 'panel_uzytkownika' %}" class="block mt-4 text-indigo-600 hover:text-indigo-800">Anuluj</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
